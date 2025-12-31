@@ -1,0 +1,137 @@
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10%;
+    align-items: center;
+}
+
+.logo {
+    color: #4f46e5;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.light {
+    background-color: #eef2ff;
+}
+
+/* ===== HOME ===== */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.home span {
+    color: #4f46e5;
+}
+
+.profile-img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== SKILLS ===== */
+.skills-container span {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    background: #4f46e5;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons a {
+    margin: 10px;
+    font-size: 24px;
+    color: #4f46e5;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111827;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-top: 30px;
+    }
+
+    .nav-links {
+        display: none; /* simple mobile */
+    }
+}
